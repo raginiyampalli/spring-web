@@ -1,2 +1,4 @@
-package com.src.model;public class Product {
+package com.src.model;
+
+public class Product {
 }
