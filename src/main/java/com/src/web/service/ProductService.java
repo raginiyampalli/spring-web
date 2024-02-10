@@ -20,6 +20,6 @@ public class ProductService {
         if(productsMap.containsKey(id)){
             return productsMap.get(id);
         }
-        return null;
+        return new Product("Request Failed - Couldn't find the product");
     }
 }
