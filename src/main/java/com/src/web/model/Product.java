@@ -1,5 +1,8 @@
 package com.src.web.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Product {
 
     private Integer id;
@@ -7,6 +10,10 @@ public class Product {
     private Integer price;
 
     private String error;
+
+    public Product(){
+
+    }
 
     public Product(Integer id, String name, Integer price){
         this.id = id;
